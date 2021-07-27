@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
-  <xacro:macro name="panda_arm" params="arm_id:='panda' description_pkg:='franka_panda_description' connected_to:='' in_gazebo='false' xyz:='0 0 0' rpy:='0 0 0'">
+  <xacro:macro name="panda_arm" params="arm_id:='panda' description_pkg:='franka_panda_description' connected_to:='' in_gazebo='false' xyz:='0 0 0.6' rpy:='0 0 0'">
     <!-- If using custom frame with ${connected_to} param, make sure 'world' frame exists in its TF tree -->
     <xacro:if value="${connected_to == ''}">
       <link name="world" />

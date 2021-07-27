@@ -27,13 +27,17 @@
     </link>
     <link name="${ns}_leftfinger">
       <visual>
+        <origin xyz="-0.01 -0.01 0" rpy="1.57 3.14 -1.57"/>
         <geometry>
-          <mesh filename="package://franka_panda_description/meshes/visual/finger.dae"/>
+          <mesh filename="/home/asano/Dropbox/CAD/MI-automation/for-robotmodel/panda-hand-tip_heatpress_v2_left.STL" scale="0.001 0.001 0.001"/>
+          <!-- <mesh filename="package://franka_panda_description/meshes/visual/finger.dae"/> -->
         </geometry>
       </visual>
       <collision>
+        <origin xyz="-0.01 -0.01 0" rpy="1.57 3.14 -1.57"/>
         <geometry>
-          <mesh filename="package://franka_panda_description/meshes/collision/finger.stl"/>
+          <mesh filename="/home/asano/Dropbox/CAD/MI-automation/for-robotmodel/panda-hand-tip_heatpress_v2_left.STL" scale="0.001 0.001 0.001"/>
+          <!-- <mesh filename="package://franka_panda_description/meshes/collision/finger.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -44,15 +48,17 @@
     </link>
     <link name="${ns}_rightfinger">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
+        <origin xyz="-0.01 0.01 0" rpy="-1.57 0 -1.57"/>
         <geometry>
-          <mesh filename="package://franka_panda_description/meshes/visual/finger.dae"/>
+          <mesh filename="/home/asano/Dropbox/CAD/MI-automation/for-robotmodel/panda-hand-tip_heatpress_v2_right.STL" scale="0.001 0.001 0.001"/>
+          <!-- <mesh filename="package://franka_panda_description/meshes/visual/finger.dae"/> -->
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
+        <origin xyz="0.01 0.01 0" rpy="-1.57 0 -1.57"/>
         <geometry>
-          <mesh filename="package://franka_panda_description/meshes/collision/finger.stl"/>
+          <mesh filename="/home/asano/Dropbox/CAD/MI-automation/for-robotmodel/panda-hand-tip_heatpress_v2_right.STL" scale="0.001 0.001 0.001"/>
+          <!-- <mesh filename="package://franka_panda_description/meshes/collision/finger.stl"/> -->
         </geometry>
       </collision>
       <inertial>
